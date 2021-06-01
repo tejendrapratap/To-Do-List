@@ -13,69 +13,63 @@ code {
 }
 
 .main_div {
-  background-color: rgb(130, 142, 243);
-  height: 100vh;
+  background-color: rgb(119, 196, 67);
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .center_div {
+  background-color: white;
   width: 25%;
   height: 80vh;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
 
 h1 {
-  color: white;
-  background: transparent;
-  background-color: rgb(116, 17, 209);
-  padding: 6px 0 2px 0;
-  margin-bottom: 10px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  margin: 5px 10px;
+  font-size: 50px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-input {
-  text-align: center;
+.input_div {
   height: 30px;
-  top: 10px;
-  border: none;
-  background: transparent;
+  width: 60%;
   font-size: 20px;
   font-weight: 500;
-  width: 60%;
-  border-bottom: 2px solid rgb(116, 17, 209);
+  border: none;
   outline: none;
+  border-bottom: 2px solid green;
+  text-align: center;
 }
 
-button {
-  min-height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: rgb(116, 17, 209);
-  color: white;
+.btn {
+  margin-left: 10px !important;
+  height: 60px;
+  width: 50px;
+  border-radius: 50% !important;
+  background-color: green !important;
+  color: white !important;
   font-size: 40px;
-  border: none;
   outline: none;
   margin-left: 10px;
   box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.3);
 }
 
-button:hover {
-  background-color: rgb(12, 196, 12);
+.btn:hover {
+  background-color: rgb(119, 196, 67) !important;
 }
 
-ol {
+.ordered_list {
   margin-top: 30px;
 }
 
-ol li {
+.list_items {
   padding-left: 0px;
   text-align: left;
   font-size: 20px;
@@ -83,36 +77,46 @@ ol li {
   min-height: 40px;
   display: flex;
   align-items: center;
-  color: rgb(116, 17, 209);
+  color: green;
   text-transform: capitalize;
 }
 
 .todo_style {
   display: flex;
   flex-direction: row;
-  justify-content: left;
   align-items: center;
+  justify-content: left;
 }
 
-.todo_style .fa-times {
-  width: 20px;
-  height: 20px;
+.todo_style .deleteIcon,
+.todo_style .doneIcon {
+  width: 25px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(116, 17, 209);
+  background-color: rgb(15, 201, 207);
   border-radius: 50%;
-  margin: 0 15px 0 30px;
+  margin: 0 10px;
+  padding: 5px;
   color: aliceblue;
-  box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
-.todo_style .fa-times:hover {
-  background-color: crimson;
+.todo_style .deleteIcon {
+  margin-right: 30px;
 }
 
-.todo_style .fa-times:hover .list_style {
+.todo_style .doneIcon:hover {
+  background-color: transparent;
+  color: rgb(25, 190, 25);
+  box-shadow: 5px 5px 15px -5px rgba(255, 0, 0 0.5);
+}
+
+.todo_style .deleteIcon:hover {
+  background-color: transparent;
   color: crimson;
+  box-shadow: 5px 5px 15px -5px rgba(255, 0, 0 0.5);
 }
 
 @media (max-width: 768px) {
@@ -125,11 +129,11 @@ ol li {
     justify-content: center;
     align-items: center;
   }
-  button {
-    margin-left: 5px;
+  .btn {
+    margin-left: 5px !important;
     min-height: 40px;
     width: 40px;
-    color: white;
+    color: white !important;
     font-size: 30px;
   }
 }
